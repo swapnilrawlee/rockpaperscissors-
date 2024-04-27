@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+  
+}
+.mainbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.heading{
+    line-height: 100px;
+    text-align: center;
+    font-size: large;
+    background-color: #000000;
+    color: white;
+    height: 100px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+button{
+    margin: 30px 0 0 30px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 2px 11px grey;
+    
+}
+img{
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.mixbox{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.box2,.box3{
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    text-transform: capitalize;
+}
+
+.result1{
+    background-color: #000000;
+    color: white;
+    width: 20%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin-top: 100px;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 600px){
+    .heading{
+        font-size: 0.6rem;
+    }
+    .box{
+       flex-wrap: wrap;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    .box2,.box3{
+        font-size: 1rem;
+        
+    }
+    .result{
+        font-size: 1rem;
+        width: 100%;
+        margin-top: 20%;
+    }
+    .result1{
+        width: 100%;
+        margin-top: 50%;
+        
+    }
+ 
+}
+@media screen and (min-width: 900px){
+    .heading{
+        font-size: 2.6rem;
+    }
+    .box{
+       flex-wrap: wrap;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    .box2,.box3{
+        font-size: 1rem;
+        
+    }
+ 
+    .result1{
+        width: 100%;
+        margin-top: 20%;   
+    }
+}
